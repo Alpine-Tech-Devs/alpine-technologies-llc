@@ -25,7 +25,7 @@ export default function About() {
           <h2 className="text-4xl font-bold mb-8">Our Story</h2>
           <div className="space-y-6 text-lg text-slate-700 dark:text-slate-300">
             <p>
-              Alpine Technologies LLC was founded on a simple idea: small businesses deserve access to the same quality technology and talent as enterprises. We named our company after Alpine, our beloved husky-shepherd dog, who embodies the spirit of what we do—helping others reach their peak.
+              Alpine Technologies LLC was founded on a simple idea: small businesses deserve access to the same quality technology and talent as enterprises. We named our company after Alpine, our beloved shepsky (husky-shepherd) dog, who embodies the spirit of what we do—helping others reach their peak.
             </p>
             <p>
               Both of us have spent years working as professional software engineers at various companies. We've seen firsthand how technology can transform businesses, but we've also witnessed how many small business owners struggle to find trustworthy, affordable partners to build their digital presence.
@@ -86,20 +86,20 @@ export default function About() {
         <div className="max-w-3xl mx-auto">
           <h2 className="text-4xl font-bold mb-12">Our Team</h2>
           <p className="text-lg text-slate-700 dark:text-slate-300 mb-12">
-            Alpine Technologies LLC is owned and operated by two experienced software engineers with a combined 8+ years of professional experience.
+            Alpine Technologies LLC is owned and operated by two experienced software engineers.
           </p>
           <div className="space-y-8">
             <div className="p-8 rounded-lg border border-slate-200 dark:border-slate-800">
-              <h3 className="text-2xl font-semibold mb-2">Co-Owner (You)</h3>
-              <p className="text-slate-600 dark:text-slate-400 mb-4">5+ years as a software engineer</p>
+              <h3 className="text-2xl font-semibold mb-2">Co-Owner, Developer, and CEO (Nicole)</h3>
+              {/* <p className="text-slate-600 dark:text-slate-400 mb-4">5+ years as a software engineer</p> */}
               <p className="text-slate-700 dark:text-slate-300">
                 Experienced in full-stack development, architecture, and bringing ideas to life.
               </p>
             </div>
 
             <div className="p-8 rounded-lg border border-slate-200 dark:border-slate-800">
-              <h3 className="text-2xl font-semibold mb-2">Co-Owner (Spouse)</h3>
-              <p className="text-slate-600 dark:text-slate-400 mb-4">5+ years as a software engineer</p>
+              <h3 className="text-2xl font-semibold mb-2">Co-Owner, Developer, and DevOps (Alex)</h3>
+              {/* <p className="text-slate-600 dark:text-slate-400 mb-4">5+ years as a software engineer</p> */}
               <p className="text-slate-700 dark:text-slate-300">
                 Skilled in building scalable systems, quality assurance, and technical leadership.
               </p>

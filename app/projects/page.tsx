@@ -10,57 +10,39 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
-      title: "Local Landscaping Business Website",
+      title: "The Objectivity",
       description:
-        "A modern, mobile-first website with service showcases, before/after galleries, and integrated contact forms.",
+        "A modern web platform delivering objective news and analysis. Built with responsive design and optimized for readability across all devices.",
       category: "Website",
       tags: ["Next.js", "Tailwind CSS", "Responsive Design"],
-      icon: "🌿",
+      icon: "📰",
     },
     {
       id: 2,
-      title: "E-Commerce Platform",
+      title: "Colorblock Garden Planner",
       description:
-        "Full-featured e-commerce application with product catalog, shopping cart, payment processing, and admin dashboard.",
+        "An interactive garden planning application that helps users design and manage their garden layouts with seasonal planning and resource tracking.",
       category: "Web App",
-      tags: ["React", "Node.js", "Stripe", "PostgreSQL"],
-      icon: "🛒",
+      tags: ["React", "Tailwind CSS", "Firebase"],
+      icon: "🌱",
     },
     {
       id: 3,
-      title: "SaaS Management Dashboard",
+      title: "Designed Aspirations",
       description:
-        "Custom dashboard for project management with real-time updates, team collaboration features, and detailed analytics.",
-      category: "Web App",
-      tags: ["Next.js", "WebSocket", "Chart.js", "MongoDB"],
-      icon: "📊",
+        "A stunning design portfolio and brand showcase website that highlights creative work and connects designers with potential clients.",
+      category: "Website",
+      tags: ["Next.js", "Tailwind CSS", "Portfolio"],
+      icon: "🎨",
     },
     {
       id: 4,
-      title: "Photography Portfolio",
+      title: "Kindness Developmental Center Inc",
       description:
-        "Beautiful portfolio site showcasing photography work with optimized galleries, client testimonials, and booking integration.",
+        "A comprehensive web platform for a developmental center featuring program information, enrollment management, and family resources.",
       category: "Website",
-      tags: ["Next.js", "Image Optimization", "Vercel"],
-      icon: "📸",
-    },
-    {
-      id: 5,
-      title: "Appointment Booking System",
-      description:
-        "Streamlined booking system with calendar integration, automated reminders, and client management for service-based businesses.",
-      category: "Web App",
-      tags: ["React", "Firebase", "Twilio", "Calendar API"],
-      icon: "📅",
-    },
-    {
-      id: 6,
-      title: "Content Marketing Website",
-      description:
-        "Blog-powered website with SEO optimization, content management, newsletter signup, and social media integration.",
-      category: "Website",
-      tags: ["Next.js", "MDX", "SEO", "Analytics"],
-      icon: "✍️",
+      tags: ["Next.js", "React", "Content Management"],
+      icon: "❤️",
     },
   ];
 
