@@ -27,7 +27,7 @@ export default function Header() {
             priority
             className="w-10 h-10 sm:w-12 sm:h-12 object-contain"
           />
-          <span className="font-bold text-base sm:text-lg text-slate-900 dark:text-white hidden sm:inline truncate">
+          <span className="font-bold text-base sm:text-lg hidden sm:inline truncate bg-gradient-to-r from-blue-500 to-slate-900 dark:from-blue-300 dark:to-slate-100 bg-clip-text text-transparent">
             Alpine Technologies LLC
           </span>
         </Link>

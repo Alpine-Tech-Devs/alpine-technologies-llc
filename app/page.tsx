@@ -14,27 +14,27 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-br from-blue-300 to-blue-500 dark:from-blue-500 dark:to-blue-700 rounded-full blur-2xl opacity-30 -z-10 scale-110"></div>
               
               {/* Badge Circle */}
-              <div className="flex items-center justify-center w-40 h-40 sm:w-52 sm:h-52 lg:w-64 lg:h-64 rounded-full bg-gradient-to-br from-blue-400 to-blue-500 dark:from-blue-500 dark:to-blue-600 shadow-2xl relative z-10">
+              <div className="flex items-center justify-center w-48 h-48 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-full bg-gradient-to-br from-blue-400 to-blue-500 dark:from-blue-500 dark:to-blue-600 shadow-2xl relative z-10">
                 {/* Inner white container for logo */}
-                <div className="flex items-center justify-center w-36 h-36 sm:w-48 sm:h-48 lg:w-60 lg:h-60 rounded-full bg-white dark:bg-slate-800 p-4">
+                <div className="flex items-center justify-center w-40 h-40 sm:w-64 sm:h-64 lg:w-72 lg:h-72 rounded-full bg-white dark:bg-slate-800 p-2">
                   <Image
                     src="/alpine-logo.png"
                     alt="Alpine Technologies Logo"
                     width={220}
                     height={220}
-                    className="w-full h-full object-contain"
+                    className="w-2/3 h-2/3 object-contain"
                     priority
                   />
                 </div>
               </div>
             </div>
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-slate-900 dark:from-blue-300 dark:to-slate-100 bg-clip-text text-transparent">
+          <h1 className="text-5xl md:text-6xl font-bold mb-12 bg-gradient-to-r from-blue-500 to-slate-900 dark:from-blue-300 dark:to-slate-100 bg-clip-text text-transparent">
             Your Business, Elevated
           </h1>
-          <p className="text-xl md:text-2xl text-slate-700 dark:text-slate-300 mb-8 max-w-2xl mx-auto">
+          {/* <p className="text-xl md:text-2xl text-slate-700 dark:text-slate-300 mb-8 max-w-2xl mx-auto">
             Modern websites and apps built by experienced engineers who understand small business. We combine cutting-edge technology with thoughtful design to help you peak.
-          </p>
+          </p> */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
@@ -55,7 +55,7 @@ export default function Home() {
       {/* Core Values Section */}
       <section className="py-20 px-4 bg-white dark:bg-slate-950">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-16">Why Choose Alpine Tech</h2>
+          <h2 className="text-4xl font-bold text-center mb-16">Why Choose Alpine Technologies</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Expert Engineers */}
@@ -63,7 +63,7 @@ export default function Home() {
               <div className="text-4xl mb-4">⚙️</div>
               <h3 className="text-xl font-semibold mb-3">Expert Software Engineers</h3>
               <p className="text-slate-600 dark:text-slate-400">
-                Both founders have 4+ years of professional software engineering experience. We know what works.
+                Both founders have years of professional software engineering experience. We know what works.
               </p>
             </div>
 

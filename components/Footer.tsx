@@ -18,10 +18,10 @@ export default function Footer() {
                 height={40}
                 className="w-8 h-8 sm:w-10 sm:h-10 object-contain flex-shrink-0"
               />
-              <h3 className="font-bold text-lg">Alpine Technologies LLC</h3>
+              <h3 className="font-bold text-lg bg-gradient-to-r from-blue-500 to-slate-900 dark:from-blue-300 dark:to-slate-100 bg-clip-text text-transparent">Alpine Technologies LLC</h3>
             </div>
             <p className="text-slate-600 dark:text-slate-400 text-sm">
-              Modern websites and apps for small businesses. Owned by software engineers with 4+ years of experience.
+              Modern websites and apps for small businesses. Owned by software engineers.
             </p>
           </div>
 

@@ -17,7 +17,7 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Alpine Technologies LLC | Modern Websites & Apps for Small Businesses",
   description:
-    "Alpine Technologies LLC builds modern websites and apps for small businesses. Owned by experienced software engineers with 4+ years of experience.",
+    "Alpine Technologies LLC builds modern websites and apps for small businesses. Owned by experienced software engineers.",
   metadataBase: new URL("https://alpinetech.com"),
 };
 

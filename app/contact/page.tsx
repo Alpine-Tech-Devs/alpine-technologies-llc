@@ -48,7 +48,7 @@ export default function Contact() {
       {/* Page Header */}
       <section className="bg-gradient-to-r from-blue-50 to-slate-50 dark:from-slate-900 dark:to-slate-800 px-4 py-20">
         <div className="max-w-3xl mx-auto">
-          <h1 className="text-5xl font-bold mb-6">Let's Talk</h1>
+          <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-slate-900 dark:from-blue-300 dark:to-slate-100 bg-clip-text text-transparent">Let's Talk</h1>
           <p className="text-xl text-slate-700 dark:text-slate-300">
             Ready to bring your project to life? Get in touch with our team.
           </p>
