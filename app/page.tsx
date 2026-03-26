@@ -44,7 +44,7 @@ export default function Home() {
             </Link>
             <Link
               href="/about"
-              className="bg-slate-200 hover:bg-slate-300 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-900 dark:text-slate-50 font-semibold py-3 px-8 rounded-lg transition-colors inline-block"
+              className="bg-slate-500 hover:bg-slate-600 dark:bg-slate-700 dark:hover:bg-slate-600 text-white font-semibold py-3 px-8 rounded-lg transition-colors inline-block"
             >
               Learn About Us
             </Link>
@@ -141,7 +141,7 @@ export default function Home() {
           </p>
           <Link
             href="/contact"
-            className="bg-white hover:bg-slate-100 text-blue-500 font-semibold py-3 px-8 rounded-lg transition-colors inline-block"
+            className="bg-white hover:bg-slate-100 text-slate-900 font-semibold py-3 px-8 rounded-lg transition-colors inline-block"
           >
             Get in Touch
           </Link>

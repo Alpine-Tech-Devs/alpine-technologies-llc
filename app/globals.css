@@ -49,12 +49,21 @@ body {
 
 /* Link styles with better contrast */
 a {
-  color: inherit;
+  color: #2563eb;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+/* Styled buttons and nav links preserve their colors */
+a.text-white {
+  color: white;
+}
+
+a.text-slate-900 {
+  color: rgb(15, 23, 42);
 }
 
 /* Skip to main content link (for accessibility) */
