@@ -1,0 +1,90 @@
+<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @media (prefers-color-scheme: dark) {
+        .logo-stroke { stroke: #fff; }
+        .logo-fill { fill: #fff; }
+      }
+    </style>
+  </defs>
+  
+  <!-- Left Ear -->
+  <path class="logo-stroke" d="M 80 100 Q 70 50 75 20 Q 78 35 88 85 Q 85 95 82 100" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="78" y1="40" x2="80" y2="90" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+  <line x1="82" y1="35" x2="84" y2="90" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+  
+  <!-- Right Ear -->
+  <path class="logo-stroke" d="M 320 100 Q 330 50 325 20 Q 322 35 312 85 Q 315 95 318 100" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="322" y1="40" x2="320" y2="90" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+  <line x1="318" y1="35" x2="316" y2="90" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+  
+  <!-- Head outline -->
+  <ellipse cx="200" cy="120" rx="95" ry="90" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Left side head shading/texture -->
+  <path d="M 120 80 Q 115 120 125 160" stroke="currentColor" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <path d="M 110 100 Q 108 130 115 160" stroke="currentColor" stroke-width="1.5" fill="none" opacity="0.4"/>
+  
+  <!-- Right side head shading/texture -->
+  <path d="M 280 80 Q 285 120 275 160" stroke="currentColor" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <path d="M 290 100 Q 292 130 285 160" stroke="currentColor" stroke-width="1.5" fill="none" opacity="0.4"/>
+  
+  <!-- Snout/muzzle -->
+  <ellipse cx="200" cy="165" rx="70" ry="60" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Snout shading -->
+  <path d="M 160 140 Q 155 170 165 200" stroke="currentColor" stroke-width="1.5" fill="none" opacity="0.4"/>
+  <path d="M 240 140 Q 245 170 235 200" stroke="currentColor" stroke-width="1.5" fill="none" opacity="0.4"/>
+  
+  <!-- Left Eye outer -->
+  <ellipse cx="155" cy="110" rx="16" ry="18" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Left Eye white -->
+  <ellipse cx="155" cy="110" rx="11" ry="12" fill="white"/>
+  
+  <!-- Left Eye pupil -->
+  <circle cx="157" cy="112" r="6" fill="currentColor"/>
+  
+  <!-- Left Eye shine -->
+  <circle cx="159" cy="109" r="2.5" fill="white"/>
+  
+  <!-- Right Eye outer -->
+  <ellipse cx="245" cy="110" rx="16" ry="18" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Right Eye white -->
+  <ellipse cx="245" cy="110" rx="11" ry="12" fill="white"/>
+  
+  <!-- Right Eye pupil -->
+  <circle cx="243" cy="112" r="6" fill="currentColor"/>
+  
+  <!-- Right Eye shine -->
+  <circle cx="241" cy="109" r="2.5" fill="white"/>
+  
+  <!-- Nose -->
+  <ellipse cx="200" cy="160" rx="22" ry="20" fill="currentColor" stroke="currentColor" stroke-width="2"/>
+  
+  <!-- Nose detail -->
+  <line x1="200" y1="155" x2="200" y2="180" stroke="white" stroke-width="1.5" opacity="0.8"/>
+  <line x1="185" y1="165" x2="215" y2="165" stroke="white" stroke-width="1.5" opacity="0.6"/>
+  
+  <!-- Mouth -->
+  <path d="M 200 175 Q 185 190 175 205" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 200 175 Q 215 190 225 205" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 200 175 L 200 215" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Mouth detail/tongue hint -->
+  <path d="M 195 210 Q 200 225 205 210" stroke="currentColor" stroke-width="1.5" fill="none" opacity="0.7" stroke-linecap="round"/>
+  
+  <!-- Chin/Jaw definition -->
+  <path d="M 150 195 Q 200 220 250 195" stroke="currentColor" stroke-width="2" fill="none" opacity="0.8" stroke-linecap="round"/>
+  
+  <!-- Text: ALPINE -->
+  <text x="200" y="290" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="900" text-anchor="middle" letter-spacing="3" fill="currentColor">
+    ALPINE
+  </text>
+  
+  <!-- Text: TECHNOLOGIES -->
+  <text x="200" y="330" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="600" text-anchor="middle" letter-spacing="2" fill="currentColor">
+    TECHNOLOGIES
+  </text>
+</svg>
