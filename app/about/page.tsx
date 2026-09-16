@@ -14,7 +14,7 @@ export default function About() {
         <div className="max-w-3xl mx-auto">
           <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-slate-900 dark:from-blue-300 dark:to-slate-100 bg-clip-text text-transparent">About Alpine Technologies</h1>
           <p className="text-xl text-slate-700 dark:text-slate-300">
-            We're a team of experienced software engineers dedicated to helping small businesses succeed online.
+            We're a duo of experienced software engineers dedicated to helping small businesses succeed online.
           </p>
         </div>
       </section>
@@ -25,13 +25,13 @@ export default function About() {
           <h2 className="text-4xl font-bold mb-8">Our Story</h2>
           <div className="space-y-6 text-lg text-slate-700 dark:text-slate-300">
             <p>
-              Alpine Technologies LLC was founded on a simple idea: small businesses deserve access to the same quality technology and talent as enterprises. We named our company after Alpine, our beloved shepsky (husky-shepherd) dog, who embodies the spirit of what we do—helping others reach their peak.
+              Alpine Technologies LLC was created because we believe small businesses deserve high-quality technology, not confusing processes or enterprise-level complexity. Our goal is to make modern software clear, practical, and genuinely helpful for growing companies.
             </p>
             <p>
-              Both of us have spent years working as professional software engineers at various companies. We've seen firsthand how technology can transform businesses, but we've also witnessed how many small business owners struggle to find trustworthy, affordable partners to build their digital presence.
+              We named our company after Alpine, our shepsky (husky-shepherd) dog, whose personality reflects how we work: hard-working, smart, and good-looking. That same standard shows up in every project we deliver—strong engineering, thoughtful design, and real business value.
             </p>
             <p>
-              That's why we started Alpine Technologies LLC. We leverage modern technology, including AI, to increase our efficiency and speed. But here's what makes us different: we never cut corners. Every line of code is reviewed, tested, and planned by human experts. We believe in using technology to enhance our capabilities, not replace our expertise.
+              What makes us different is that we are a small business too, so we understand your reality. We can build your app, help solve broader technology challenges, and create a practical plan for your business to succeed long-term with technology. We use modern tools, including AI, to work efficiently, but every solution is reviewed, tested, and guided by human expertise.
             </p>
           </div>
         </div>
@@ -43,8 +43,8 @@ export default function About() {
           <h2 className="text-4xl font-bold mb-12">Our Values</h2>
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-semibold mb-4 flex items-center gap-3">
-                <span className="text-3xl">🎯</span> Excellence
+              <h3 className="text-2xl font-semibold mb-4">
+                Excellence
               </h3>
               <p className="text-slate-700 dark:text-slate-300">
                 We're committed to delivering exceptional work. That means clean code, thoughtful design, and solutions that actually solve your problems.
@@ -52,8 +52,8 @@ export default function About() {
             </div>
 
             <div>
-              <h3 className="text-2xl font-semibold mb-4 flex items-center gap-3">
-                <span className="text-3xl">🤝</span> Partnership
+              <h3 className="text-2xl font-semibold mb-4">
+                Partnership
               </h3>
               <p className="text-slate-700 dark:text-slate-300">
                 Your success is our success. We work closely with you, understand your business, and build solutions tailored to your specific needs.
@@ -61,8 +61,8 @@ export default function About() {
             </div>
 
             <div>
-              <h3 className="text-2xl font-semibold mb-4 flex items-center gap-3">
-                <span className="text-3xl">🔬</span> Innovation
+              <h3 className="text-2xl font-semibold mb-4">
+                Innovation
               </h3>
               <p className="text-slate-700 dark:text-slate-300">
                 We stay current with the latest technologies and best practices, ensuring your business benefits from modern, performant, and secure solutions.
@@ -70,8 +70,8 @@ export default function About() {
             </div>
 
             <div>
-              <h3 className="text-2xl font-semibold mb-4 flex items-center gap-3">
-                <span className="text-3xl">💡</span> Integrity
+              <h3 className="text-2xl font-semibold mb-4">
+                Integrity
               </h3>
               <p className="text-slate-700 dark:text-slate-300">
                 We're transparent about what we can do, how long it takes, and how much it costs. No surprises, just honest partnerships.
@@ -86,11 +86,11 @@ export default function About() {
         <div className="max-w-3xl mx-auto">
           <h2 className="text-4xl font-bold mb-12">Our Team</h2>
           <p className="text-lg text-slate-700 dark:text-slate-300 mb-12">
-            Alpine Technologies LLC is owned and operated by two experienced software engineers.
+            Alpine Technologies LLC is owned and operated by two experienced software engineers with diverse backgrounds in teaching, mathematics, and event management.
           </p>
           <div className="space-y-8">
             <div className="p-8 rounded-lg border border-slate-200 dark:border-slate-800">
-              <h3 className="text-2xl font-semibold mb-2">Co-Owner, Developer, and CEO (Nicole)</h3>
+              <h3 className="text-2xl font-semibold mb-2">Nicole - Co-Owner/Developer</h3>
               {/* <p className="text-slate-600 dark:text-slate-400 mb-4">5+ years as a software engineer</p> */}
               <p className="text-slate-700 dark:text-slate-300">
                 Experienced in full-stack development, architecture, and bringing ideas to life.
@@ -98,7 +98,7 @@ export default function About() {
             </div>
 
             <div className="p-8 rounded-lg border border-slate-200 dark:border-slate-800">
-              <h3 className="text-2xl font-semibold mb-2">Co-Owner, Developer, and DevOps (Alex)</h3>
+              <h3 className="text-2xl font-semibold mb-2">Alex - Co-Owner/Developer</h3>
               {/* <p className="text-slate-600 dark:text-slate-400 mb-4">5+ years as a software engineer</p> */}
               <p className="text-slate-700 dark:text-slate-300">
                 Skilled in building scalable systems, quality assurance, and technical leadership.

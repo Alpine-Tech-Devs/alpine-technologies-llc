@@ -16,6 +16,7 @@ export default function Footer() {
                 alt="Alpine Technologies Logo"
                 width={40}
                 height={40}
+                sizes="(max-width: 640px) 32px, 40px"
                 className="w-8 h-8 sm:w-10 sm:h-10 object-contain flex-shrink-0"
               />
               <h3 className="font-bold text-lg bg-gradient-to-r from-blue-500 to-slate-900 dark:from-blue-300 dark:to-slate-100 bg-clip-text text-transparent">Alpine Technologies LLC</h3>

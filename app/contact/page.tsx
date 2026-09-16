@@ -11,6 +11,7 @@ export default function Contact() {
   });
 
   const [submitted, setSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (
@@ -26,9 +27,26 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setSubmitError(null);
 
-    // Simulate form submission (in production, you'd send to a backend)
-    setTimeout(() => {
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        const payload = (await response.json().catch(() => null)) as
+          | { error?: string }
+          | null;
+        setSubmitError(payload?.error ?? "Something went wrong. Please try again.");
+        setIsSubmitting(false);
+        return;
+      }
+
       setSubmitted(true);
       setFormData({
         name: "",
@@ -36,11 +54,12 @@ export default function Contact() {
         company: "",
         message: "",
       });
-      setIsSubmitting(false);
-
-      // Reset success message after 5 seconds
       setTimeout(() => setSubmitted(false), 5000);
-    }, 500);
+    } catch {
+      setSubmitError("Network error. Please check your connection and try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -101,6 +120,12 @@ export default function Contact() {
                 <p className="text-green-800 dark:text-green-200 font-semibold">
                   ✓ Thank you! We've received your message and will get back to you soon.
                 </p>
+              </div>
+            )}
+
+            {submitError && (
+              <div className="mb-8 p-4 bg-red-100 dark:bg-red-900/30 border border-red-300 dark:border-red-700 rounded-lg">
+                <p className="text-red-800 dark:text-red-200 font-semibold">{submitError}</p>
               </div>
             )}
 

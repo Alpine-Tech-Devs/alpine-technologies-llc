@@ -1,7 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
+import { projects } from "@/data/projects";
 
 export default function Home() {
+  const recentProjects = projects;
+
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
@@ -22,6 +25,7 @@ export default function Home() {
                     alt="Alpine Technologies Logo"
                     width={220}
                     height={220}
+                    sizes="(max-width: 640px) 106px, (max-width: 1024px) 170px, 192px"
                     className="w-2/3 h-2/3 object-contain"
                     priority
                   />
@@ -60,28 +64,25 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Expert Engineers */}
             <div className="p-8 rounded-lg border border-slate-200 dark:border-slate-800 hover:shadow-lg dark:hover:shadow-slate-800/50 transition-shadow">
-              <div className="text-4xl mb-4">⚙️</div>
               <h3 className="text-xl font-semibold mb-3">Expert Software Engineers</h3>
               <p className="text-slate-600 dark:text-slate-400">
-                Both founders have years of professional software engineering experience. We know what works.
+                Both founders have years of professional software engineering experience. We know what works and we've learned what doesn't.
               </p>
             </div>
 
             {/* Modern Tech */}
             <div className="p-8 rounded-lg border border-slate-200 dark:border-slate-800 hover:shadow-lg dark:hover:shadow-slate-800/50 transition-shadow">
-              <div className="text-4xl mb-4">🚀</div>
               <h3 className="text-xl font-semibold mb-3">Modern Technology</h3>
               <p className="text-slate-600 dark:text-slate-400">
-                Built with the latest frameworks and practices for performance, security, and scalability.
+                Built with the latest frameworks and practices for performance, security, and scalability. We are continuously learning to help deliver the best solutions for your business.
               </p>
             </div>
 
             {/* Human Review */}
             <div className="p-8 rounded-lg border border-slate-200 dark:border-slate-800 hover:shadow-lg dark:hover:shadow-slate-800/50 transition-shadow">
-              <div className="text-4xl mb-4">✓</div>
               <h3 className="text-xl font-semibold mb-3">Human Verified</h3>
               <p className="text-slate-600 dark:text-slate-400">
-                We use AI to be efficient, but every line of code is reviewed, tested, and planned by human experts.
+                We use AI to be efficient, but all code is reviewed, tested, and planned by us. We do not allow AI to use data for training (which ensures your data remains private and secure).
               </p>
             </div>
           </div>
@@ -96,29 +97,39 @@ export default function Home() {
             We've helped small businesses transform their online presence with custom websites and applications.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-            <div className="bg-white dark:bg-slate-800 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-lg transition-shadow">
-              <div className="h-48 bg-gradient-to-r from-blue-300 to-blue-500 flex items-center justify-center">
-                <span className="text-5xl">🎨</span>
+            {recentProjects.map((project) => (
+              <div
+                key={project.id}
+                className="bg-white dark:bg-slate-800 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-lg transition-shadow"
+              >
+                {project.image && (
+                  <div className="relative aspect-video bg-slate-100 dark:bg-slate-800">
+                    <Image
+                      src={project.image}
+                      alt={`${project.title} screenshot`}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                )}
+                <div className="p-6">
+                  <p className="text-sm text-blue-500 dark:text-blue-300 font-medium mb-2">{project.category}</p>
+                  <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+                  <p className="text-slate-600 dark:text-slate-400 mb-4">{project.description}</p>
+                  {project.url && (
+                    <a
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block text-sm text-blue-600 dark:text-blue-400 hover:underline font-medium"
+                    >
+                      Visit Site →
+                    </a>
+                  )}
+                </div>
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Custom Websites</h3>
-                <p className="text-slate-600 dark:text-slate-400">
-                  Tailored designs that reflect your brand and engage your customers.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-white dark:bg-slate-800 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-lg transition-shadow">
-              <div className="h-48 bg-gradient-to-r from-purple-400 to-purple-600 flex items-center justify-center">
-                <span className="text-5xl">📱</span>
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Web Applications</h3>
-                <p className="text-slate-600 dark:text-slate-400">
-                  Powerful, interactive apps that solve real business problems.
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
 
           <div className="text-center">

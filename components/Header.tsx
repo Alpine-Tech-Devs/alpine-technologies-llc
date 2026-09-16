@@ -24,6 +24,7 @@ export default function Header() {
             alt="Alpine Technologies Logo"
             width={48}
             height={48}
+            sizes="(max-width: 640px) 40px, 48px"
             priority
             className="w-10 h-10 sm:w-12 sm:h-12 object-contain"
           />

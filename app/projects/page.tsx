@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
+import { projects } from "@/data/projects";
 
 export const metadata = {
   title: "Projects | Alpine Technologies LLC",
@@ -7,45 +9,6 @@ export const metadata = {
 };
 
 export default function Projects() {
-  const projects = [
-    {
-      id: 1,
-      title: "The Objectivity",
-      description:
-        "A modern web platform delivering objective news and analysis. Built with responsive design and optimized for readability across all devices.",
-      category: "Website",
-      tags: ["Next.js", "Tailwind CSS", "Responsive Design"],
-      icon: "📰",
-    },
-    {
-      id: 2,
-      title: "Colorblock Garden Planner",
-      description:
-        "An interactive garden planning application that helps users design and manage their garden layouts with seasonal planning and resource tracking.",
-      category: "Web App",
-      tags: ["React", "Tailwind CSS", "Firebase"],
-      icon: "🌱",
-    },
-    {
-      id: 3,
-      title: "Designed Aspirations",
-      description:
-        "A stunning design portfolio and brand showcase website that highlights creative work and connects designers with potential clients.",
-      category: "Website",
-      tags: ["Next.js", "Tailwind CSS", "Portfolio"],
-      icon: "🎨",
-    },
-    {
-      id: 4,
-      title: "Kindness Developmental Center Inc",
-      description:
-        "A comprehensive web platform for a developmental center featuring program information, enrollment management, and family resources.",
-      category: "Website",
-      tags: ["Next.js", "React", "Content Management"],
-      icon: "❤️",
-    },
-  ];
-
   return (
     <div className="flex flex-col">
       {/* Page Header */}
@@ -60,16 +23,26 @@ export default function Projects() {
 
       {/* Projects Grid */}
       <section className="py-20 px-4 bg-white dark:bg-slate-950">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {projects.map((project) => (
               <div
                 key={project.id}
                 className="bg-white dark:bg-slate-900 rounded-lg border border-slate-200 dark:border-slate-800 overflow-hidden hover:shadow-lg dark:hover:shadow-slate-800/50 transition-shadow"
               >
                 {/* Icon/Image Area */}
-                <div className="h-48 bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-800 dark:to-slate-700 flex items-center justify-center text-6xl">
-                  {project.icon}
+                <div className="relative aspect-video bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-800 dark:to-slate-700 flex items-center justify-center text-6xl">
+                  {project.image ? (
+                    <Image
+                      src={project.image}
+                      alt={`${project.title} screenshot`}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    project.icon
+                  )}
                 </div>
 
                 {/* Content */}
@@ -87,6 +60,17 @@ export default function Projects() {
                     {project.description}
                   </p>
 
+                  {project.url && (
+                    <a
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block text-sm text-blue-600 dark:text-blue-400 hover:underline font-medium mb-4"
+                    >
+                      Visit Site →
+                    </a>
+                  )}
+
                   {/* Tags */}
                   <div className="flex flex-wrap gap-2">
                     {project.tags.map((tag) => (
@@ -102,6 +86,10 @@ export default function Projects() {
               </div>
             ))}
           </div>
+
+          <p className="text-center text-slate-600 dark:text-slate-400 mt-10 text-lg">
+            More coming soon...
+          </p>
         </div>
       </section>
 

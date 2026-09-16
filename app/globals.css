@@ -68,22 +68,6 @@ a.text-slate-900 {
   color: rgb(15, 23, 42);
 }
 
-/* Skip to main content link (for accessibility) */
-.skip-to-main {
-  position: absolute;
-  top: -40px;
-  left: 0;
-  background: #2563eb;
-  color: white;
-  padding: 8px;
-  text-decoration: none;
-  z-index: 100;
-}
-
-.skip-to-main:focus {
-  top: 0;
-}
-
 /* Image optimization */
 img {
   max-width: 100%;
