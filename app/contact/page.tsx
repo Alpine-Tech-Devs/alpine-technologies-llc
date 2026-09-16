@@ -77,15 +77,15 @@ export default function Contact() {
       {/* Contact Section */}
       <section className="py-20 px-4 bg-white dark:bg-slate-950">
         <div className="max-w-3xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
             {/* Contact Info */}
             <div>
               <h3 className="text-xl font-semibold mb-4 flex items-center gap-3">
                 <span className="text-2xl">📧</span> Email
               </h3>
               <p className="text-slate-600 dark:text-slate-400">
-                <a href="mailto:info@alpinetech.com" className="hover:text-blue-500 dark:hover:text-blue-300 transition-colors">
-                  info@alpinetech.com
+                <a href="mailto:contactus@alpinetechdevs.com" className="hover:text-blue-500 dark:hover:text-blue-300 transition-colors">
+                  contactus@alpinetechdevs.com
                 </a>
               </p>
             </div>
@@ -95,18 +95,7 @@ export default function Contact() {
                 <span className="text-2xl">📍</span> Location
               </h3>
               <p className="text-slate-600 dark:text-slate-400">
-                Based in the USA<br />
-                Serving clients worldwide
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-semibold mb-4 flex items-center gap-3">
-                <span className="text-2xl">💬</span> Response Time
-              </h3>
-              <p className="text-slate-600 dark:text-slate-400">
-                We typically respond<br />
-                within 24 hours
+                Maine, USA
               </p>
             </div>
           </div>
@@ -232,7 +221,7 @@ export default function Contact() {
             {[
               {
                 q: "What's your typical project timeline?",
-                a: "It depends on the scope. Small websites can take 2-4 weeks, while larger applications may take 2-3 months. We'll provide a detailed timeline during the discovery phase.",
+                a: "It depends on the scope. Small websites can take 2-4 weeks, while larger applications may take several months. We'll provide a timeline estimate during the discovery phase.",
               },
               {
                 q: "Do you have a minimum project budget?",
@@ -240,7 +229,7 @@ export default function Contact() {
               },
               {
                 q: "Can you help with domains and hosting?",
-                a: "Yes! We can recommend hosting providers and help you set everything up. We typically recommend Vercel for Next.js applications.",
+                a: "Yes! We can recommend hosting providers and help you set everything up.",
               },
               {
                 q: "Do you provide ongoing support after launch?",
