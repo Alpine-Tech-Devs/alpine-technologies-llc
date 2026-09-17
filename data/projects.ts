@@ -18,7 +18,6 @@ export const projects: Project[] = [
     category: "Web App",
     tags: ["React", "Tailwind CSS", "Firebase"],
     icon: "🌱",
-    url: "https://gardengeniedesign.com/",
     image: "/gardengenie.png",
   },
   {
