@@ -80,9 +80,7 @@ export default function Contact() {
           <div className="mb-16 flex justify-center">
             {/* Contact Info */}
             <div className="text-center">
-              <h3 className="text-xl font-semibold mb-4 flex items-center justify-center gap-3">
-                <span className="text-2xl">📧</span> Email
-              </h3>
+              <h3 className="text-xl font-semibold mb-4">Email</h3>
               <p className="text-slate-600 dark:text-slate-400">
                 <a href="mailto:contactus@alpinetechdevs.com" className="hover:text-blue-500 dark:hover:text-blue-300 transition-colors">
                   contactus@alpinetechdevs.com
