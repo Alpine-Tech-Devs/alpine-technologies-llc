@@ -77,25 +77,16 @@ export default function Contact() {
       {/* Contact Section */}
       <section className="py-20 px-4 bg-white dark:bg-slate-950">
         <div className="max-w-3xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+          <div className="mb-16 flex justify-center">
             {/* Contact Info */}
-            <div>
-              <h3 className="text-xl font-semibold mb-4 flex items-center gap-3">
+            <div className="text-center">
+              <h3 className="text-xl font-semibold mb-4 flex items-center justify-center gap-3">
                 <span className="text-2xl">📧</span> Email
               </h3>
               <p className="text-slate-600 dark:text-slate-400">
                 <a href="mailto:contactus@alpinetechdevs.com" className="hover:text-blue-500 dark:hover:text-blue-300 transition-colors">
                   contactus@alpinetechdevs.com
                 </a>
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-semibold mb-4 flex items-center gap-3">
-                <span className="text-2xl">📍</span> Location
-              </h3>
-              <p className="text-slate-600 dark:text-slate-400">
-                Maine, USA
               </p>
             </div>
           </div>
