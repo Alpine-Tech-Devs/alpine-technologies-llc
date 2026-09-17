@@ -28,7 +28,7 @@ export default function About() {
               Alpine Technologies LLC was created because we believe small businesses deserve high-quality technology, not confusing processes or enterprise-level complexity. Our goal is to make modern software clear, practical, and genuinely helpful for growing companies.
             </p>
             <p>
-              We named our company after Alpine, our shepsky (husky-shepherd) dog, whose personality reflects how we work: hard-working, smart, and good-looking. That same standard shows up in every project we deliver—strong engineering, thoughtful design, and real business value.
+              We named our company after Alpine, our shepsky (husky-shepherd) dog, whose personality reflects how we work: hard-working, smart, and good-looking. That same standard shows up in every project we deliver—strong engineering, thoughtful design, and real business value that also looks good.
             </p>
             <p>
               What makes us different is that we are a small business too, so we understand your reality. We can build your app, help solve broader technology challenges, and create a practical plan for your business to succeed long-term with technology. We use modern tools, including AI, to work efficiently, but every solution is reviewed, tested, and guided by human expertise.
